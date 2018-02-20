@@ -2,7 +2,10 @@
 #include <stdlib.h>
 
 int fib (int n) {
-return 0;
+if (n<=2)
+ return 1;
+else
+ return fib(n-2) + fib(n-1);
 }
 void main(){
  int n;
